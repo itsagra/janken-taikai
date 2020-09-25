@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Janken Battle</title>
+    <link rel="icon" href="img/janken-logo.png"> 
+</head>
+<body>
+    <audio src="audio/janken-backsound.mp3" autoplay="autoplay" id='audiobackground'></audio>
+    <link rel="stylesheet" href="style.css">
+    <img src="img/janken.jpg" alt="janken" id="janken-left">
+    <img src="img/battle.jpg" alt="battle" id="battle-right">
+    <ul>
+        <li>
+            <img src="img/rock.png" alt="rock" class="player-choose" id="rock" value="rock">
+        </li>
+        <!-- <div id="compChoose"></div> -->
+        <div id="hasil"></div>
+        <li>
+            <img src="img/jankenpon2.png" alt="comp janken" class="comp-choose">
+        </li>
+        <li>
+            <img src="img/scissor.png" alt="scissor" class="player-choose" id="scissor">
+        </li>
+        <li>
+            <img src="img/paper.png" alt="scissor" class="player-choose" id="paper">
+        </li>
+    </ul>
+
+    <a onclick="document.getElementById('audiobackground').play();">
+        <img src="img/playbutton.png" id="audiobutton">
+    </a>
+    <script src="jankenpon.js"></script>
+</body>
+</html>
